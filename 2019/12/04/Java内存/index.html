@@ -5,13 +5,13 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="http://yoursite.com">
+  <link rel="dns-prefetch" href="https://zytlegend.github.io">
   <title>Java内存 | Yangtao的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="java内存划分5个部分 栈（stack）作用：存放的都是方法中的局部变量作用域：一旦超出作用域，立即从栈内存中消失 堆（heap）作用：凡是new出来的东西都存储在堆内存中堆内存的东西都用一个地址值：16进制堆内存里面的数据都有默认值，规则：      数据类型 默认值    整数 0   浮点数 0.0   字符 \u0000   布尔 false   引用类型 null   ###  方法区">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java内存">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;04&#x2F;Java%E5%86%85%E5%AD%98&#x2F;index.html">
+<meta property="og:url" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;2019&#x2F;12&#x2F;04&#x2F;Java%E5%86%85%E5%AD%98&#x2F;index.html">
 <meta property="og:site_name" content="Yangtao的博客">
 <meta property="og:description" content="java内存划分5个部分 栈（stack）作用：存放的都是方法中的局部变量作用域：一旦超出作用域，立即从栈内存中消失 堆（heap）作用：凡是new出来的东西都存储在堆内存中堆内存的东西都用一个地址值：16进制堆内存里面的数据都有默认值，规则：      数据类型 默认值    整数 0   浮点数 0.0   字符 \u0000   布尔 false   引用类型 null   ###  方法区">
 <meta property="og:locale" content="en">
@@ -45,7 +45,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="/img/HeadIcon.jpg" class="js-avatar">
+			<img src="/assets/img/HeadIcon.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">Yangtao</a></h1>
@@ -59,7 +59,9 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+				<li><a href="/photos">相册</a></li>
+	        
+				<li><a href="/tags">随笔</a></li>
 	        
 			</ul>
 		</nav>
@@ -81,7 +83,7 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" href="https://github.com/zytlegend" title="github"><i class="icon-github"></i></a>
 		        
 					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
 		        
@@ -105,7 +107,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/img/HeadIcon.jpg" class="js-avatar">
+				<img src="/assets/img/HeadIcon.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Yangtao</h1>
@@ -119,12 +121,14 @@
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="https://github.com/zytlegend" title="github"><i class="icon-github"></i></a>
 			        
 						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
 			        
@@ -136,12 +140,14 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 33.333333333333336%"><a href="/photos">相册</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/tags">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -247,6 +253,16 @@
                   <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
                   <div class="reward-box">
                     
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
                     
                   </div>
                 </span>
@@ -310,7 +326,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/12/04/Java%E5%86%85%E5%AD%98/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://zytlegend.github.io/2019/12/04/Java%E5%86%85%E5%AD%98/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -334,8 +350,8 @@
     </a>
   
   
-    <a href="/2019/12/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">我的第一篇博客文章</div>
+    <a href="/2019/12/03/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -472,6 +488,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">Testing</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">Another Tag</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
