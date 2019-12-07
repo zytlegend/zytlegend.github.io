@@ -116,7 +116,7 @@
         var data = res.list[j].arr;
         var liTmpl = "";
         for (var i = 0, len = data.link.length; i < len; i++) {
-          var minSrc = 'https://raw.githubusercontent.com/zytlegend/Blog-back-up/master/min_photos/' + data.link[i];
+          var minSrc = 'https://raw.githubusercontent.com/zytlegend/Blog-back-up/master/min_photos/' + data.link[i]; 
           var src = 'https://raw.githubusercontent.com/zytlegend/Blog-back-up/master/photos/' + data.link[i];
           var type = data.type[i];
           var target = src + (type === 'video' ? '.mp4' : '.jpg');
@@ -224,12 +224,14 @@
       replaceGetAttribute('IFrame');
 
       function registerLazyAttr(attr) {
-        if (indexOf.call(lazyAttrs, attr) === -1) {
+        if (indexOf.call(lazyAttrs, attr) === 0) {
+			console.log("Hello Runoob!3");
           lazyAttrs.push(attr);
         }
       }
 
       function lazyload(opts) {
+		  console.log("Hello Runoob!1");
         opts = merge({
           'offset': 333,
           'src': 'data-src',
@@ -238,6 +240,7 @@
 
         if (typeof opts.src === 'string') {
           registerLazyAttr(opts.src);
+		  console.log("Hello Runoob!2");
         }
 
         var elts = [];
