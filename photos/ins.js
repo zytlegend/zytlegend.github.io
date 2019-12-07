@@ -224,30 +224,25 @@
       replaceGetAttribute('IFrame');
 
       function registerLazyAttr(attr) {
-        if (indexOf.call(lazyAttrs, attr) === 0) {
-			console.log("Hello Runoob!3");
+        if (indexOf.call(lazyAttrs, attr) === -1) {
           lazyAttrs.push(attr);
         }
       }
 
       function lazyload(opts) {
-		  console.log("Hello Runoob!1");
         opts = merge({
           'offset': 333,
           'src': 'data-src',
           'container': false
-        }, opts || {});
-
+        }, opts || {});				
         if (typeof opts.src === 'string') {
           registerLazyAttr(opts.src);
-		  console.log("Hello Runoob!2");
         }
 
         var elts = [];
 
         function show(elt) {
           var src = findRealSrc(elt);
-
           if (src) {
             elt.src = src;
           }
@@ -265,6 +260,7 @@
         }
 
         function register(elt) {
+		console.log("111")
           elt.onload = null;
           elt.removeAttribute('onload');
           elt.onerror = null;
