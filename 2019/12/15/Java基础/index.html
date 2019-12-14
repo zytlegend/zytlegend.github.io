@@ -6,17 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://zytlegend.github.io">
-  <title>Tag: Testing | Yangtao的博客</title>
+  <title>Java基础 | Yangtao的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="个人博客，技术分享，心得记录">
-<meta name="keywords" content="hexo">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Yangtao的博客">
-<meta property="og:url" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;tags&#x2F;Testing&#x2F;index.html">
+  <meta name="description" content="Java内存java内存划分5个部分 栈（stack）作用：存放的都是方法中的局部变量作用域：一旦超出作用域，立即从栈内存中消失 堆（heap）作用：凡是new出来的东西都存储在堆内存中堆内存的东西都用一个地址值：16进制堆内存里面的数据都有默认值，规则：">
+<meta name="keywords" content="java基础">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java基础">
+<meta property="og:url" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;2019&#x2F;12&#x2F;15&#x2F;Java%E5%9F%BA%E7%A1%80&#x2F;index.html">
 <meta property="og:site_name" content="Yangtao的博客">
-<meta property="og:description" content="个人博客，技术分享，心得记录">
+<meta property="og:description" content="Java内存java内存划分5个部分 栈（stack）作用：存放的都是方法中的局部变量作用域：一旦超出作用域，立即从栈内存中消失 堆（heap）作用：凡是new出来的东西都存储在堆内存中堆内存的东西都用一个地址值：16进制堆内存里面的数据都有默认值，规则：">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;2019&#x2F;12&#x2F;15&#x2F;Java%E5%9F%BA%E7%A1%80&#x2F;%5Cassets%5Cmd_img%5C01-%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%BE.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;2019&#x2F;12&#x2F;15&#x2F;Java%E5%9F%BA%E7%A1%80&#x2F;%5Cassets%5Cmd_img%5C02-%E4%B8%A4%E4%B8%AA%E5%AF%B9%E8%B1%A1%E4%BD%BF%E7%94%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E6%96%B9%E6%B3%95%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%BE.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;2019&#x2F;12&#x2F;15&#x2F;Java%E5%9F%BA%E7%A1%80&#x2F;%5Cassets%5Cmd_img%5C03-%E4%B8%A4%E4%B8%AA%E5%BC%95%E7%94%A8%E6%8C%87%E5%90%91%E5%90%8C%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%BE.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;2019&#x2F;12&#x2F;15&#x2F;Java%E5%9F%BA%E7%A1%80&#x2F;%5Cassets%5Cmd_img%5C%E8%AE%BF%E9%97%AE%E4%BF%AE%E9%A5%B0%E7%AC%A6.png">
+<meta property="og:updated_time" content="2019-12-14T17:35:01.293Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;2019&#x2F;12&#x2F;15&#x2F;Java%E5%9F%BA%E7%A1%80&#x2F;%5Cassets%5Cmd_img%5C01-%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%BE.png">
   
     <link rel="alternative" href="/atom.xml" title="Yangtao的博客" type="application/atom+xml">
   
@@ -168,64 +174,288 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Java基础" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/07/Java%E5%86%85%E5%AD%98/" class="archive-article-date">
-  	<time datetime="2019-12-07T15:23:29.787Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-07</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/07/Java%E5%86%85%E5%AD%98/">Java内存</a>
+    <h1 class="article-title" itemprop="name">
+      Java基础
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/12/15/Java%E5%9F%BA%E7%A1%80/" class="archive-article-date">
+  	<time datetime="2019-12-14T17:36:40.775Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-15</time>
+</a>
+        
+	
+		<span class="archive-article-date">
+        阅读次数 <span id="busuanzi_value_page_pv"></span>
+    </span>
+
+      </header>
+	  
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Java内存"><a href="#Java内存" class="headerlink" title="Java内存"></a>Java内存</h1><p>java内存划分5个部分</p>
+<h3 id="栈（stack）"><a href="#栈（stack）" class="headerlink" title="栈（stack）"></a>栈（stack）</h3><p>作用：存放的都是方法中的局部变量<br>作用域：一旦超出作用域，立即从栈内存中消失</p>
+<h3 id="堆（heap）"><a href="#堆（heap）" class="headerlink" title="堆（heap）"></a>堆（heap）</h3><p>作用：凡是new出来的东西都存储在堆内存中<br>堆内存的东西都用一个地址值：16进制<br>堆内存里面的数据都有默认值，规则：  </p>
+<a id="more"></a>
+<table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>整数</td>
+<td>0</td>
+</tr>
+<tr>
+<td>浮点数</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>字符</td>
+<td>\u0000</td>
+</tr>
+<tr>
+<td>布尔</td>
+<td>false</td>
+</tr>
+<tr>
+<td>引用类型</td>
+<td>null</td>
+</tr>
+</tbody></table>
+<h3 id="方法区（Method-Area）"><a href="#方法区（Method-Area）" class="headerlink" title="方法区（Method Area）"></a>方法区（Method Area）</h3><p>作用：存储.class相关的信息，包含方法的信息  </p>
+<h3 id="本地方法栈（Native-Method-Stack）"><a href="#本地方法栈（Native-Method-Stack）" class="headerlink" title="本地方法栈（Native Method Stack）"></a>本地方法栈（Native Method Stack）</h3><p>与操作系统相关  </p>
+<h3 id="寄存器（pc-Register）"><a href="#寄存器（pc-Register）" class="headerlink" title="寄存器（pc Register）"></a>寄存器（pc Register）</h3><p>与cpu相关  </p>
+<h3 id="程序运行内存流程"><a href="#程序运行内存流程" class="headerlink" title="程序运行内存流程"></a>程序运行内存流程</h3><h4 id="一个对象运行内存图"><a href="#一个对象运行内存图" class="headerlink" title="一个对象运行内存图"></a>一个对象运行内存图</h4><p><img src="%5Cassets%5Cmd_img%5C01-%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%BE.png" alt="img"></p>
+<h4 id="两个对象运行内存图"><a href="#两个对象运行内存图" class="headerlink" title="两个对象运行内存图"></a>两个对象运行内存图</h4><p><img src="%5Cassets%5Cmd_img%5C02-%E4%B8%A4%E4%B8%AA%E5%AF%B9%E8%B1%A1%E4%BD%BF%E7%94%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E6%96%B9%E6%B3%95%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%BE.png" alt="img"></p>
+<h4 id="两个对象引用指向同一个对香港的内存图"><a href="#两个对象引用指向同一个对香港的内存图" class="headerlink" title="两个对象引用指向同一个对香港的内存图"></a>两个对象引用指向同一个对香港的内存图</h4><p><img src="%5Cassets%5Cmd_img%5C03-%E4%B8%A4%E4%B8%AA%E5%BC%95%E7%94%A8%E6%8C%87%E5%90%91%E5%90%8C%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%BE.png" alt="img"></p>
+<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><h3 id="方法的重载（overload）"><a href="#方法的重载（overload）" class="headerlink" title="方法的重载（overload）"></a>方法的重载（overload）</h3><p>方法名称相同，方法参数不同<br>参数不同分如下情况：</p>
+<ul>
+<li>参数个数</li>
+<li>参数类型</li>
+<li>参数顺序<br>如下情况无关：</li>
+<li>返回值类型</li>
+<li>参数名称<h3 id="局部变量和成员变量"><a href="#局部变量和成员变量" class="headerlink" title="局部变量和成员变量"></a>局部变量和成员变量</h3></li>
+</ul>
+<p>1.定义的位置不一样<br>局部变量：在方法的内部<br>成员变量：在方法的外部，直接写在类当中<br>2.作用的范围不一样<br>局部变量：只有方法当中才可以使用，出了方法就不能再使用<br>成员变量：整个类全部可以通用<br>3.默认值不一样<br>局部变量：没有默认值，如果要想使用，必须手动进行赋值<br>成员变量：如果没有赋值，会有默认值，规则和数组一样<br>4.内存的位置不一样<br>局部变量：位于栈内存<br>成员变量：位于堆内存<br>5.生命周期不一样<br>局部变量：随着方法进栈而诞生，随着放大出栈而消失<br>成员变量：随着对象的创建而诞生，随着对象被垃圾回收而消失  </p>
+<h3 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h3><h4 id="抽象与封装"><a href="#抽象与封装" class="headerlink" title="抽象与封装"></a>抽象与封装</h4><p>把客观事物封装成抽象的类，并且类可以把自己的数据和方法只让可信的类或者对象操作，对不可信的进行信息隐藏。  </p>
+<h5 id="访问修饰符"><a href="#访问修饰符" class="headerlink" title="访问修饰符"></a>访问修饰符</h5><p>在Java中类中成员的属性有：public，protected，<default>， private，这四个属性的访问权限依次降低。<br><img src="%5Cassets%5Cmd_img%5C%E8%AE%BF%E9%97%AE%E4%BF%AE%E9%A5%B0%E7%AC%A6.png" alt="img"></p>
+<ul>
+<li>private<br>private只能由本类调用，超出本类范围只能间接访问，通过Getter/Setter方法进行定义和获取<br>如下：通过setAge/getAge方法对来进行访问控制<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">public class person&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    String name;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    private int age;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    public void setAge(int age)&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">        if(age&lt;100 &amp;&amp; age &gt;&#x3D;0)&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">            this.age &#x3D; age;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">        &#125;else&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">            system.out.print(&quot;年龄错误！&quot;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">        &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">    public int getAge()&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">        return age;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h4 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h4><h4 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h4>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" target="_blank" rel="noopener" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color3">Testing</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color2">Another Tag</a>
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color2">java基础</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/IT//" class="article-tag-list-link color3">IT</a>
+        		</li>
+      		
+		</ul>
+	</div>
 
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" target="_blank" rel="noopener" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://zytlegend.github.io/2019/12/15/Java%E5%9F%BA%E7%A1%80/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2019/12/07/%E7%88%B1%E5%90%AC%E9%9F%B3%E4%B9%90/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">爱听音乐</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Java内存"><span class="toc-number">1.</span> <span class="toc-text">Java内存</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#栈（stack）"><span class="toc-number">1.0.1.</span> <span class="toc-text">栈（stack）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#堆（heap）"><span class="toc-number">1.0.2.</span> <span class="toc-text">堆（heap）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#方法区（Method-Area）"><span class="toc-number">1.0.3.</span> <span class="toc-text">方法区（Method Area）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#本地方法栈（Native-Method-Stack）"><span class="toc-number">1.0.4.</span> <span class="toc-text">本地方法栈（Native Method Stack）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#寄存器（pc-Register）"><span class="toc-number">1.0.5.</span> <span class="toc-text">寄存器（pc Register）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#程序运行内存流程"><span class="toc-number">1.0.6.</span> <span class="toc-text">程序运行内存流程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#一个对象运行内存图"><span class="toc-number">1.0.6.1.</span> <span class="toc-text">一个对象运行内存图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#两个对象运行内存图"><span class="toc-number">1.0.6.2.</span> <span class="toc-text">两个对象运行内存图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#两个对象引用指向同一个对香港的内存图"><span class="toc-number">1.0.6.3.</span> <span class="toc-text">两个对象引用指向同一个对香港的内存图</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方法"><span class="toc-number">1.1.</span> <span class="toc-text">方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#方法的重载（overload）"><span class="toc-number">1.1.1.</span> <span class="toc-text">方法的重载（overload）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#局部变量和成员变量"><span class="toc-number">1.1.2.</span> <span class="toc-text">局部变量和成员变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#面向对象"><span class="toc-number">1.1.3.</span> <span class="toc-text">面向对象</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#抽象与封装"><span class="toc-number">1.1.3.1.</span> <span class="toc-text">抽象与封装</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#访问修饰符"><span class="toc-number">1.1.3.1.1.</span> <span class="toc-text">访问修饰符</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#继承"><span class="toc-number">1.1.3.2.</span> <span class="toc-text">继承</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#多态"><span class="toc-number">1.1.3.3.</span> <span class="toc-text">多态</span></a></li></ol></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
+  
+        
+            <section id="comments" class="comments">
+              <style>
+                .comments{margin:30px;padding:10px;background:#fff}
+                @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+              </style>
+              <div id="vcomment" class="comment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script src="https://cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    var notify = 'true' == true ? true : false;
+    var verify = 'false' == true ? true : false;
+    new Valine({
+        av: AV,
+        el: '#vcomment',
+        notify: notify,
+        app_id: "5RMcegjHp2CsO1iaAUImzEpH-gzGzoHsz",
+        app_key: "u29Uzwh1T44nqI4YqJC9KTBY",
+        placeholder: "有话要说？",
+        avatar:"wavatar",
+    });
+</script>
+          </section>
+        
+
+	
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -252,9 +482,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
@@ -323,11 +553,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">Testing</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">Another Tag</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">java基础</a>
               </li>
              
               <li class="article-tag-list-item">
