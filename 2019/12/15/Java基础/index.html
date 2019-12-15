@@ -16,13 +16,14 @@
 <meta property="og:site_name" content="Yangtao的博客">
 <meta property="og:description" content="Java内存java内存划分5个部分 栈（stack）作用：存放的都是方法中的局部变量作用域：一旦超出作用域，立即从栈内存中消失 堆（heap）作用：凡是new出来的东西都存储在堆内存中堆内存的东西都用一个地址值：16进制堆内存里面的数据都有默认值，规则：">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;2019&#x2F;12&#x2F;15&#x2F;Java%E5%9F%BA%E7%A1%80&#x2F;%5Cassets%5Cmd_img%5C01-%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%BE.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;2019&#x2F;12&#x2F;15&#x2F;Java%E5%9F%BA%E7%A1%80&#x2F;%5Cassets%5Cmd_img%5C02-%E4%B8%A4%E4%B8%AA%E5%AF%B9%E8%B1%A1%E4%BD%BF%E7%94%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E6%96%B9%E6%B3%95%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%BE.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;2019&#x2F;12&#x2F;15&#x2F;Java%E5%9F%BA%E7%A1%80&#x2F;%5Cassets%5Cmd_img%5C03-%E4%B8%A4%E4%B8%AA%E5%BC%95%E7%94%A8%E6%8C%87%E5%90%91%E5%90%8C%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%BE.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;2019&#x2F;12&#x2F;15&#x2F;Java%E5%9F%BA%E7%A1%80&#x2F;%5Cassets%5Cmd_img%5C%E8%AE%BF%E9%97%AE%E4%BF%AE%E9%A5%B0%E7%AC%A6.png">
-<meta property="og:updated_time" content="2019-12-14T17:35:01.293Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;2019&#x2F;12&#x2F;15&#x2F;md_img&#x2F;01-%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%BE.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;2019&#x2F;12&#x2F;15&#x2F;Java%E5%9F%BA%E7%A1%80&#x2F;..%5Cmd_img%5C02-%E4%B8%A4%E4%B8%AA%E5%AF%B9%E8%B1%A1%E4%BD%BF%E7%94%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E6%96%B9%E6%B3%95%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%BE.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;2019&#x2F;12&#x2F;15&#x2F;Java%E5%9F%BA%E7%A1%80&#x2F;..%5Cmd_img%5C03-%E4%B8%A4%E4%B8%AA%E5%BC%95%E7%94%A8%E6%8C%87%E5%90%91%E5%90%8C%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%BE.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;2019&#x2F;12&#x2F;15&#x2F;Java%E5%9F%BA%E7%A1%80&#x2F;..%5Cmd_img%5C%E8%AE%BF%E9%97%AE%E4%BF%AE%E9%A5%B0%E7%AC%A6.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;2019&#x2F;12&#x2F;15&#x2F;Java%E5%9F%BA%E7%A1%80&#x2F;..%5Cmd_img%5Cstatic.jpg">
+<meta property="og:updated_time" content="2019-12-15T15:50:28.694Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;2019&#x2F;12&#x2F;15&#x2F;Java%E5%9F%BA%E7%A1%80&#x2F;%5Cassets%5Cmd_img%5C01-%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%BE.png">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;2019&#x2F;12&#x2F;15&#x2F;md_img&#x2F;01-%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%BE.png">
   
     <link rel="alternative" href="/atom.xml" title="Yangtao的博客" type="application/atom+xml">
   
@@ -235,26 +236,71 @@
 <h3 id="方法区（Method-Area）"><a href="#方法区（Method-Area）" class="headerlink" title="方法区（Method Area）"></a>方法区（Method Area）</h3><p>作用：存储.class相关的信息，包含方法的信息  </p>
 <h3 id="本地方法栈（Native-Method-Stack）"><a href="#本地方法栈（Native-Method-Stack）" class="headerlink" title="本地方法栈（Native Method Stack）"></a>本地方法栈（Native Method Stack）</h3><p>与操作系统相关  </p>
 <h3 id="寄存器（pc-Register）"><a href="#寄存器（pc-Register）" class="headerlink" title="寄存器（pc Register）"></a>寄存器（pc Register）</h3><p>与cpu相关  </p>
-<h3 id="程序运行内存流程"><a href="#程序运行内存流程" class="headerlink" title="程序运行内存流程"></a>程序运行内存流程</h3><h4 id="一个对象运行内存图"><a href="#一个对象运行内存图" class="headerlink" title="一个对象运行内存图"></a>一个对象运行内存图</h4><p><img src="%5Cassets%5Cmd_img%5C01-%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%BE.png" alt="img"></p>
-<h4 id="两个对象运行内存图"><a href="#两个对象运行内存图" class="headerlink" title="两个对象运行内存图"></a>两个对象运行内存图</h4><p><img src="%5Cassets%5Cmd_img%5C02-%E4%B8%A4%E4%B8%AA%E5%AF%B9%E8%B1%A1%E4%BD%BF%E7%94%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E6%96%B9%E6%B3%95%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%BE.png" alt="img"></p>
-<h4 id="两个对象引用指向同一个对香港的内存图"><a href="#两个对象引用指向同一个对香港的内存图" class="headerlink" title="两个对象引用指向同一个对香港的内存图"></a>两个对象引用指向同一个对香港的内存图</h4><p><img src="%5Cassets%5Cmd_img%5C03-%E4%B8%A4%E4%B8%AA%E5%BC%95%E7%94%A8%E6%8C%87%E5%90%91%E5%90%8C%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%BE.png" alt="img"></p>
+<h3 id="程序运行内存流程"><a href="#程序运行内存流程" class="headerlink" title="程序运行内存流程"></a>程序运行内存流程</h3><h4 id="一个对象运行内存图"><a href="#一个对象运行内存图" class="headerlink" title="一个对象运行内存图"></a>一个对象运行内存图</h4><p><img src="../md_img/01-%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%BE.png" alt="img"></p>
+<h4 id="两个对象运行内存图"><a href="#两个对象运行内存图" class="headerlink" title="两个对象运行内存图"></a>两个对象运行内存图</h4><p><img src="..%5Cmd_img%5C02-%E4%B8%A4%E4%B8%AA%E5%AF%B9%E8%B1%A1%E4%BD%BF%E7%94%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E6%96%B9%E6%B3%95%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%BE.png" alt="img"></p>
+<h4 id="两个对象引用指向同一个对象的内存图"><a href="#两个对象引用指向同一个对象的内存图" class="headerlink" title="两个对象引用指向同一个对象的内存图"></a>两个对象引用指向同一个对象的内存图</h4><p><img src="..%5Cmd_img%5C03-%E4%B8%A4%E4%B8%AA%E5%BC%95%E7%94%A8%E6%8C%87%E5%90%91%E5%90%8C%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%BE.png" alt="img"></p>
 <h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><h3 id="方法的重载（overload）"><a href="#方法的重载（overload）" class="headerlink" title="方法的重载（overload）"></a>方法的重载（overload）</h3><p>方法名称相同，方法参数不同<br>参数不同分如下情况：</p>
 <ul>
-<li>参数个数</li>
-<li>参数类型</li>
-<li>参数顺序<br>如下情况无关：</li>
-<li>返回值类型</li>
-<li>参数名称<h3 id="局部变量和成员变量"><a href="#局部变量和成员变量" class="headerlink" title="局部变量和成员变量"></a>局部变量和成员变量</h3></li>
+<li><p>参数个数</p>
+</li>
+<li><p>参数类型</p>
+</li>
+<li><p>参数顺序  </p>
+<p>如下情况无关：</p>
+</li>
+<li><p>返回值类型</p>
+</li>
+<li><p>参数名称</p>
+<h3 id="局部变量和成员变量"><a href="#局部变量和成员变量" class="headerlink" title="局部变量和成员变量"></a>局部变量和成员变量</h3></li>
 </ul>
 <p>1.定义的位置不一样<br>局部变量：在方法的内部<br>成员变量：在方法的外部，直接写在类当中<br>2.作用的范围不一样<br>局部变量：只有方法当中才可以使用，出了方法就不能再使用<br>成员变量：整个类全部可以通用<br>3.默认值不一样<br>局部变量：没有默认值，如果要想使用，必须手动进行赋值<br>成员变量：如果没有赋值，会有默认值，规则和数组一样<br>4.内存的位置不一样<br>局部变量：位于栈内存<br>成员变量：位于堆内存<br>5.生命周期不一样<br>局部变量：随着方法进栈而诞生，随着放大出栈而消失<br>成员变量：随着对象的创建而诞生，随着对象被垃圾回收而消失  </p>
 <h3 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h3><h4 id="抽象与封装"><a href="#抽象与封装" class="headerlink" title="抽象与封装"></a>抽象与封装</h4><p>把客观事物封装成抽象的类，并且类可以把自己的数据和方法只让可信的类或者对象操作，对不可信的进行信息隐藏。  </p>
-<h5 id="访问修饰符"><a href="#访问修饰符" class="headerlink" title="访问修饰符"></a>访问修饰符</h5><p>在Java中类中成员的属性有：public，protected，<default>， private，这四个属性的访问权限依次降低。<br><img src="%5Cassets%5Cmd_img%5C%E8%AE%BF%E9%97%AE%E4%BF%AE%E9%A5%B0%E7%AC%A6.png" alt="img"></p>
+<h5 id="访问修饰符"><a href="#访问修饰符" class="headerlink" title="访问修饰符"></a>访问修饰符</h5><p>在Java中类中成员的属性有：public，protected，<default>， private，这四个属性的访问权限依次降低。<br><img src="..%5Cmd_img%5C%E8%AE%BF%E9%97%AE%E4%BF%AE%E9%A5%B0%E7%AC%A6.png" alt="img"></p>
 <ul>
 <li>private<br>private只能由本类调用，超出本类范围只能间接访问，通过Getter/Setter方法进行定义和获取<br>如下：通过setAge/getAge方法对来进行访问控制<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">public class person&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    String name;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    private int age;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    public void setAge(int age)&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">        if(age&lt;100 &amp;&amp; age &gt;&#x3D;0)&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">            this.age &#x3D; age;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">        &#125;else&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">            system.out.print(&quot;年龄错误！&quot;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">        &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">    public int getAge()&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">        return age;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
 
 </li>
 </ul>
-<h4 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h4><h4 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h4>
+<h4 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h4><h4 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h4><h3 id="this关键字"><a href="#this关键字" class="headerlink" title="this关键字"></a>this关键字</h3><p>当方法的局部变量和类的成员变量重名的时候，根据”就近”原则，优先使用局部变量<br>如果需要访问成员变量，需要使用格式：<br>this.成员变量名  </p>
+<h3 id="static关键字"><a href="#static关键字" class="headerlink" title="static关键字"></a>static关键字</h3><p>一旦使用static关键字，内部内容不属于对象而属于类，由本类对象共享</p>
+<ul>
+<li><p>修饰成员变量（Field）</p>
+<p>由一个对象进行修改后，其他对象也可访问其修改后的内容</p>
+</li>
+<li><p>修饰成员方法</p>
+<p>注意：建议使用MyClass.methodStatic调用静态方法，虽然obj.methodStatic也能调用，但是容易产生歧义，误以为是普通方法</p>
+<hr>
+<p>由于内存当中是静态内容先于非静态内容因此：</p>
+<ol>
+<li><p>静态不能直接访问非静态内容,非静态能访问静态内容</p>
+</li>
+<li><p>静态方法不能使用this关键字，因为this关联的是对象，而静态是关联类</p>
+<p>静态内存图：</p>
+<p><img src="..%5Cmd_img%5Cstatic.jpg" alt="img"></p>
+<p>静态</p>
+</li>
+</ol>
+</li>
+</ul>
+<h3 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h3><p>注意事项：</p>
+<ol>
+<li>构造方法的名称必须和所在类的名称完全一致</li>
+<li>构造方法不要写返回值类型，连void都不写</li>
+<li>构造方法不能return一个具体的返回值</li>
+<li>如果没有编写任何构造方法，那么编译器默认一个无参构造方法</li>
+<li>一旦编写构造方法，编译器取消自动生成无参构造方法</li>
+</ol>
+<h3 id="常用API"><a href="#常用API" class="headerlink" title="常用API"></a>常用API</h3><h4 id="匿名对象"><a href="#匿名对象" class="headerlink" title="匿名对象"></a>匿名对象</h4><p>作用：仅适用一次使用</p>
+<p><code>int num = new Scanner(System.in).nextInt</code></p>
+<ol>
+<li><p>作为参数传入</p>
+<p><code>methodParam(new Scanner(System.in))</code></p>
+</li>
+<li><p>作为返回值</p>
+<p><code>return new Scanner(System.in)</code></p>
+</li>
+</ol>
+
       
 
       
@@ -408,7 +454,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Java内存"><span class="toc-number">1.</span> <span class="toc-text">Java内存</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#栈（stack）"><span class="toc-number">1.0.1.</span> <span class="toc-text">栈（stack）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#堆（heap）"><span class="toc-number">1.0.2.</span> <span class="toc-text">堆（heap）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#方法区（Method-Area）"><span class="toc-number">1.0.3.</span> <span class="toc-text">方法区（Method Area）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#本地方法栈（Native-Method-Stack）"><span class="toc-number">1.0.4.</span> <span class="toc-text">本地方法栈（Native Method Stack）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#寄存器（pc-Register）"><span class="toc-number">1.0.5.</span> <span class="toc-text">寄存器（pc Register）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#程序运行内存流程"><span class="toc-number">1.0.6.</span> <span class="toc-text">程序运行内存流程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#一个对象运行内存图"><span class="toc-number">1.0.6.1.</span> <span class="toc-text">一个对象运行内存图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#两个对象运行内存图"><span class="toc-number">1.0.6.2.</span> <span class="toc-text">两个对象运行内存图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#两个对象引用指向同一个对香港的内存图"><span class="toc-number">1.0.6.3.</span> <span class="toc-text">两个对象引用指向同一个对香港的内存图</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方法"><span class="toc-number">1.1.</span> <span class="toc-text">方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#方法的重载（overload）"><span class="toc-number">1.1.1.</span> <span class="toc-text">方法的重载（overload）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#局部变量和成员变量"><span class="toc-number">1.1.2.</span> <span class="toc-text">局部变量和成员变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#面向对象"><span class="toc-number">1.1.3.</span> <span class="toc-text">面向对象</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#抽象与封装"><span class="toc-number">1.1.3.1.</span> <span class="toc-text">抽象与封装</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#访问修饰符"><span class="toc-number">1.1.3.1.1.</span> <span class="toc-text">访问修饰符</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#继承"><span class="toc-number">1.1.3.2.</span> <span class="toc-text">继承</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#多态"><span class="toc-number">1.1.3.3.</span> <span class="toc-text">多态</span></a></li></ol></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Java内存"><span class="toc-number">1.</span> <span class="toc-text">Java内存</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#栈（stack）"><span class="toc-number">1.0.1.</span> <span class="toc-text">栈（stack）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#堆（heap）"><span class="toc-number">1.0.2.</span> <span class="toc-text">堆（heap）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#方法区（Method-Area）"><span class="toc-number">1.0.3.</span> <span class="toc-text">方法区（Method Area）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#本地方法栈（Native-Method-Stack）"><span class="toc-number">1.0.4.</span> <span class="toc-text">本地方法栈（Native Method Stack）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#寄存器（pc-Register）"><span class="toc-number">1.0.5.</span> <span class="toc-text">寄存器（pc Register）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#程序运行内存流程"><span class="toc-number">1.0.6.</span> <span class="toc-text">程序运行内存流程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#一个对象运行内存图"><span class="toc-number">1.0.6.1.</span> <span class="toc-text">一个对象运行内存图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#两个对象运行内存图"><span class="toc-number">1.0.6.2.</span> <span class="toc-text">两个对象运行内存图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#两个对象引用指向同一个对象的内存图"><span class="toc-number">1.0.6.3.</span> <span class="toc-text">两个对象引用指向同一个对象的内存图</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方法"><span class="toc-number">1.1.</span> <span class="toc-text">方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#方法的重载（overload）"><span class="toc-number">1.1.1.</span> <span class="toc-text">方法的重载（overload）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#局部变量和成员变量"><span class="toc-number">1.1.2.</span> <span class="toc-text">局部变量和成员变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#面向对象"><span class="toc-number">1.1.3.</span> <span class="toc-text">面向对象</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#抽象与封装"><span class="toc-number">1.1.3.1.</span> <span class="toc-text">抽象与封装</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#访问修饰符"><span class="toc-number">1.1.3.1.1.</span> <span class="toc-text">访问修饰符</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#继承"><span class="toc-number">1.1.3.2.</span> <span class="toc-text">继承</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#多态"><span class="toc-number">1.1.3.3.</span> <span class="toc-text">多态</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#this关键字"><span class="toc-number">1.1.4.</span> <span class="toc-text">this关键字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#static关键字"><span class="toc-number">1.1.5.</span> <span class="toc-text">static关键字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#构造方法"><span class="toc-number">1.1.6.</span> <span class="toc-text">构造方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常用API"><span class="toc-number">1.1.7.</span> <span class="toc-text">常用API</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#匿名对象"><span class="toc-number">1.1.7.1.</span> <span class="toc-text">匿名对象</span></a></li></ol></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
