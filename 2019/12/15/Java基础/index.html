@@ -16,15 +16,14 @@
 <meta property="og:site_name" content="Yangtao的博客">
 <meta property="og:description" content="Java内存java内存划分5个部分 栈（stack）作用：存放的都是方法中的局部变量作用域：一旦超出作用域，立即从栈内存中消失 堆（heap）作用：凡是new出来的东西都存储在堆内存中堆内存的东西都用一个地址值：16进制堆内存里面的数据都有默认值，规则：">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;2019&#x2F;12&#x2F;15&#x2F;Java%E5%9F%BA%E7%A1%80&#x2F;assets&#x2F;md_img&#x2F;01-只有一个对象的内存图.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;2019&#x2F;12&#x2F;15&#x2F;md_img&#x2F;01-%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%BE.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;2019&#x2F;12&#x2F;15&#x2F;Java%E5%9F%BA%E7%A1%80&#x2F;..%5Cmd_img%5C02-%E4%B8%A4%E4%B8%AA%E5%AF%B9%E8%B1%A1%E4%BD%BF%E7%94%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E6%96%B9%E6%B3%95%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%BE.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;2019&#x2F;12&#x2F;15&#x2F;Java%E5%9F%BA%E7%A1%80&#x2F;..%5Cmd_img%5C03-%E4%B8%A4%E4%B8%AA%E5%BC%95%E7%94%A8%E6%8C%87%E5%90%91%E5%90%8C%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%BE.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;2019&#x2F;12&#x2F;15&#x2F;Java%E5%9F%BA%E7%A1%80&#x2F;..%5Cmd_img%5C%E8%AE%BF%E9%97%AE%E4%BF%AE%E9%A5%B0%E7%AC%A6.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;2019&#x2F;12&#x2F;15&#x2F;Java%E5%9F%BA%E7%A1%80&#x2F;..%5Cmd_img%5Cstatic.jpg">
-<meta property="og:updated_time" content="2019-12-16T13:38:01.778Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;md_img&#x2F;01-只有一个对象的内存图.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;md_img&#x2F;02-两个对象使用同一个方法的内存图.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;md_img&#x2F;03-两个引用指向同一个对象的内存图.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;md_img&#x2F;访问修饰符.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;md_img&#x2F;static.png">
+<meta property="og:updated_time" content="2019-12-16T14:29:27.715Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;2019&#x2F;12&#x2F;15&#x2F;Java%E5%9F%BA%E7%A1%80&#x2F;assets&#x2F;md_img&#x2F;01-只有一个对象的内存图.png">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;zytlegend.github.io&#x2F;md_img&#x2F;01-只有一个对象的内存图.png">
   
     <link rel="alternative" href="/atom.xml" title="Yangtao的博客" type="application/atom+xml">
   
@@ -237,11 +236,12 @@
 <h3 id="方法区（Method-Area）"><a href="#方法区（Method-Area）" class="headerlink" title="方法区（Method Area）"></a>方法区（Method Area）</h3><p>作用：存储.class相关的信息，包含方法的信息  </p>
 <h3 id="本地方法栈（Native-Method-Stack）"><a href="#本地方法栈（Native-Method-Stack）" class="headerlink" title="本地方法栈（Native Method Stack）"></a>本地方法栈（Native Method Stack）</h3><p>与操作系统相关  </p>
 <h3 id="寄存器（pc-Register）"><a href="#寄存器（pc-Register）" class="headerlink" title="寄存器（pc Register）"></a>寄存器（pc Register）</h3><p>与cpu相关  </p>
-<h3 id="程序运行内存流程"><a href="#程序运行内存流程" class="headerlink" title="程序运行内存流程"></a>程序运行内存流程</h3><h4 id="一个对象运行内存图"><a href="#一个对象运行内存图" class="headerlink" title="一个对象运行内存图"></a>一个对象运行内存图</h4><img src="assets/md_img/01-只有一个对象的内存图.png">
+<h3 id="程序运行内存流程"><a href="#程序运行内存流程" class="headerlink" title="程序运行内存流程"></a>程序运行内存流程</h3><h4 id="一个对象运行内存图"><a href="#一个对象运行内存图" class="headerlink" title="一个对象运行内存图"></a>一个对象运行内存图</h4><img src="/md_img/01-只有一个对象的内存图.png">
 
-<p><img src="../md_img/01-%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%BE.png" alt="img"></p>
-<h4 id="两个对象运行内存图"><a href="#两个对象运行内存图" class="headerlink" title="两个对象运行内存图"></a>两个对象运行内存图</h4><p><img src="..%5Cmd_img%5C02-%E4%B8%A4%E4%B8%AA%E5%AF%B9%E8%B1%A1%E4%BD%BF%E7%94%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E6%96%B9%E6%B3%95%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%BE.png" alt="img"></p>
-<h4 id="两个对象引用指向同一个对象的内存图"><a href="#两个对象引用指向同一个对象的内存图" class="headerlink" title="两个对象引用指向同一个对象的内存图"></a>两个对象引用指向同一个对象的内存图</h4><p><img src="..%5Cmd_img%5C03-%E4%B8%A4%E4%B8%AA%E5%BC%95%E7%94%A8%E6%8C%87%E5%90%91%E5%90%8C%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%86%85%E5%AD%98%E5%9B%BE.png" alt="img"></p>
+<h4 id="两个对象运行内存图"><a href="#两个对象运行内存图" class="headerlink" title="两个对象运行内存图"></a>两个对象运行内存图</h4><img src="/md_img/02-两个对象使用同一个方法的内存图.png">
+
+<h4 id="两个对象引用指向同一个对象的内存图"><a href="#两个对象引用指向同一个对象的内存图" class="headerlink" title="两个对象引用指向同一个对象的内存图"></a>两个对象引用指向同一个对象的内存图</h4><img src="/md_img/03-两个引用指向同一个对象的内存图.png">
+
 <h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><h3 id="方法的重载（overload）"><a href="#方法的重载（overload）" class="headerlink" title="方法的重载（overload）"></a>方法的重载（overload）</h3><p>方法名称相同，方法参数不同<br>参数不同分如下情况：</p>
 <ul>
 <li><p>参数个数</p>
@@ -258,7 +258,7 @@
 </ul>
 <p>1.定义的位置不一样<br>局部变量：在方法的内部<br>成员变量：在方法的外部，直接写在类当中<br>2.作用的范围不一样<br>局部变量：只有方法当中才可以使用，出了方法就不能再使用<br>成员变量：整个类全部可以通用<br>3.默认值不一样<br>局部变量：没有默认值，如果要想使用，必须手动进行赋值<br>成员变量：如果没有赋值，会有默认值，规则和数组一样<br>4.内存的位置不一样<br>局部变量：位于栈内存<br>成员变量：位于堆内存<br>5.生命周期不一样<br>局部变量：随着方法进栈而诞生，随着放大出栈而消失<br>成员变量：随着对象的创建而诞生，随着对象被垃圾回收而消失  </p>
 <h3 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h3><h4 id="抽象与封装"><a href="#抽象与封装" class="headerlink" title="抽象与封装"></a>抽象与封装</h4><p>把客观事物封装成抽象的类，并且类可以把自己的数据和方法只让可信的类或者对象操作，对不可信的进行信息隐藏。  </p>
-<h5 id="访问修饰符"><a href="#访问修饰符" class="headerlink" title="访问修饰符"></a>访问修饰符</h5><p>在Java中类中成员的属性有：public，protected，<default>， private，这四个属性的访问权限依次降低。<br><img src="..%5Cmd_img%5C%E8%AE%BF%E9%97%AE%E4%BF%AE%E9%A5%B0%E7%AC%A6.png" alt="img"></p>
+<h5 id="访问修饰符"><a href="#访问修饰符" class="headerlink" title="访问修饰符"></a>访问修饰符</h5><p>在Java中类中成员的属性有：public，protected，&lt; default &gt;， private，这四个属性的访问权限依次降低。<br><img src="/md_img/访问修饰符.png"></p>
 <ul>
 <li>private<br>private只能由本类调用，超出本类范围只能间接访问，通过Getter/Setter方法进行定义和获取<br>如下：通过setAge/getAge方法对来进行访问控制<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">public class person&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    String name;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    private int age;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    public void setAge(int age)&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">        if(age&lt;100 &amp;&amp; age &gt;&#x3D;0)&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">            this.age &#x3D; age;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">        &#125;else&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">            system.out.print(&quot;年龄错误！&quot;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">        &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">    public int getAge()&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">        return age;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
 
@@ -279,7 +279,8 @@
 </li>
 <li><p>静态方法不能使用this关键字，因为this关联的是对象，而静态是关联类</p>
 <p>静态内存图：</p>
-<p><img src="..%5Cmd_img%5Cstatic.jpg" alt="img"></p>
+<img src="/md_img/static.png">
+
 <p>静态</p>
 </li>
 </ol>
